@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="zh_TW" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Nintendo Switch｜任天堂(香港)有限公司</title>
+    <style>
+
+        body {
+            z-index: -1;
+            margin: 0;
+            overflow-x: hidden;
+            width: 100%;
+            height: auto;
+            background-size: 100%;
+
+        }
+
+        .lt {
+            position: absolute;
+            background-color: red;
+            height: 70px;
+            width: 140px;
+            margin-left: 0;
+            margin-right: 0;
+            text-align: center;
+            vertical-align: middle;
+            margin-top: 0;
+            float: left;
+            z-index: 5;
+        !important;
+        }
+
+        #lt {
+            vertical-align: middle;
+            height: 70px;
+            width: 110px;
+        }
+
+        .tops {
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            height: 778px;
+            width: 100%;
+            background-color: red;
+            margin: 0;
+            position: relative;
+        }
+
+        #top0 {
+            -webkit-transition: all 3s;
+            -moz-transition: all 3s;
+            -o-transition: all 3s;
+            transition: all 3s;
+            position: absolute;
+            /*   -webkit-transform: translate(0,100%);
+               -moz-transform: translate(0,100%);
+               -ms-transform: translate(0,100%);
+               -o-transform: translate(0,100%);
+               transform: translate(0,100%);*/
+            z-index: 2;
+        }
+
+        .top {
+            -webkit-transition: transform 6s;
+            -moz-transition: transform 6s;
+            -o-transition: transform 6s;
+            transition: transform 6s;
+            position: absolute;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            height: 778px;
+            width: 100%;
+            background-color: red;
+            margin: 0;
+            z-index: 0;
+        }
+
+        #bcgimg {
+            z-index: -2;
+            height: 778px;
+            width: 100%;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: fixed;
+            text-align: center;
+        }
+
+        .arrow {
+            position: absolute;
+            z-index: 3;
+            height: 20px;
+            width: auto;
+            transform: translate(1210%, 3560%);
+        }
+
+        .toplogo {
+            z-index: 3;
+            -webkit-transform: translate(168%, 33%);
+            -moz-transform: translate(168%, 33%);
+            -ms-transform: translate(168%, 33%);
+            -o-transform: translate(168%, 33%);
+            transform: translate(168%, 33%);
+            vertical-align: middle;
+            height: 60%;
+            width: 23%;
+            position: absolute;
+        }
+
+        #floatpic {
+            z-index: -1;
+            text-align: center;
+            left: 375px;
+            transition: all 3s;
+            opacity: 0;
+        }
+
+        #floatblock {
+            background-color: black;
+            z-index: 0;
+            height: 800px;
+
+        }
+
+        
+        #floatpic1 {
+            margin-bottom: 15px;
+        }
+
+        #floatpic2 {
+            transition: all 3s;
+        }
+
+        #playstyle {
+            background-color: white;
+            position: relative;
+            z-index: -1;
+        }
+
+        #method3 {
+            margin-top: 753px;
+        }
+
+        .tv {
+            width: 465px;
+            height: 465px;
+            transition: all 1s;
+            background-size: cover;
+        }
+
+        .pic8 {
+            width: 1000px;
+            transition: all 1s;
+        }
+
+        .font {
+            color: grey;
+            height: 30px;
+            font-size: 13.5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .ahref {
+            font-size: 11.5px;
+            margin-left: 60px;
+        }
+
+
+    </style>
+</head>
+
+<div>
+
+    <div id="bcgimg" style="background-image: url(bg.jpg)"></div>
+    <div class="tops" id="tops">
+        <div class="lt">
+            <!--   <a  href="http://www.nintendo.com.hk/index.htm"/>-->
+            <img id="lt" src="logo.svg" onclick="windowop()"/ >
+        </div>
+        <div class="top" id="top0" style="background-color:red;"></div>
+        <div class="top" id="top1" style="background-image: url(0.jpg);"></div>
+        <div class="top" id="top2" style="background-image: url(1.jpg);"></div>
+        <div class="top" id="top3" style="background-image: url(2.jpg);"></div>
+        <div class="top" id="top4" style="background-image: url(3.jpg);"></div>
+        <div class="top" id="top5" style="background-image: url(4.jpg);"></div>
+        <div class="top" id="top6" style="background-image: url(5.jpg);"></div>
+        <div class="top" id="top7" style="background-image: url(6.jpg);"></div>
+        <div class="top" id="top8" style="background-image: url(6.jpg);"></div>
+        <div class="top" id="top9" style="background-image: url(7.jpg);"></div>
+        <div class="top" id="top10" style="background-image: url(8.jpg);"></div>
+        <div class="top" id="top11" style="background-image: url(9.jpg);"></div>
+        <div class="top" id="top12" style="background-image: url(10.jpg);"></div>
+        <div class="top" id="top13" style="background-image: url(11.jpg);"></div>
+        <div class="top" id="top14" style="background-image: url(12.jpg);"></div>
+        <div class="top" id="top15" style="background-image: url(13.jpg);"></div>
+        <div class="top" id="top16" style="background-image: url(14.jpg);"></div>
+        <div class="top" id="top17" style="background-image: url(15.jpg);"></div>
+        <img class="toplogo" src="logo.png">
+        <img class="arrow" src="arrow.svg" onclick="scrollWindow()"/></div>
+    <div id="floatpic">
+        <div><img src="headline-01.png" style="height:90px" id="floatpic1"></div>
+        <div><img src="headline-02.png" style="height:25px"></div>
+    </div>
+    <div id="floatblock" style="background-color: #000000;margin-top: 300px">
+        <div id="black1"
+             style="display: inline;width:950px;height:469.438px;background-color: #000000;transition: all 1s;position:absolute;z-index: 1;margin-top:40px;margin-left:40px;right: 530px;"></div>
+        <div id="black2"
+             style="display: inline;width:360px;height:360px;background-color: #000000;transition: all 1s;position:absolute;z-index: 1;margin-top:525px;margin-left:40px;right: 1119px;"></div>
+        <div id="black3"
+             style="display: inline;width:360px;height:360px;background-color: #000000;transition: all 1s;position:absolute;z-index: 1;margin-top:525px;margin-left:414px;right: 745px;"></div>
+        <div id="black4"
+             style="display: inline;width:680px;height:361px;background-color: #000000;transition: all 1s;position:absolute;z-index: 1;margin-top:523px;margin-left:789.5px;right:50px;"></div>
+        <img src="img-01.jpg" style="width:950px; margin-top:40px;margin-left:40px;">
+        <img src="subheadline-pc_sp.png" style="height:155px;margin-bottom:170px; margin-left:85px;">
+        <div style="display:inline;height:100px;width:80px;" onmouseover="xs(10)" onmouseout="nxs(10)">
+            <div id="hov10"
+                 style="width:80px;height:100px;opacity:0.4;background-color:black;position:absolute;z-index: 5;left:92.5%;top:1630px;display:none;"></div>
+            <img src="bt-detail.png" style="height:80px; margin-bottom:10px; "></div>
+        <img src="img-02.jpg"
+             style="width:360px;margin-left: 40px;margin-top: 10px;margin-bottom:40px">
+        <img src="img-03.jpg"
+             style="width:360px;margin-left: 10px;margin-top: 10px;margin-bottom:40px">
+        <img src="img-04.jpg"
+             style="width:680px;margin-left: 10px;margin-top:10px;margin-bottom:40px ">
+    </div>
+    <div id="floatpic2" style="text-align:center; margin-top: 280px;  opacity: 0;">
+        <img src="headline-tab_sp.png" style="height:190px">
+    </div>
+    <div id="floatblock1" style="background-color: #000000; margin-top: 300px; ">
+        <div id="black5"
+             style="display: inline;width:888px;height:500px;background-color: #000000;transition: all 1s;position:absolute;z-index: 1;margin-top:38px;right: 591px;"></div>
+        <div id="black6"
+             style="display: inline;width:480px;height:304px;background-color: #000000;transition: all 1s;position:absolute;z-index: 1;margin-top:552px;right: 1000px;"></div>
+        <div id="black7"
+             style="display: inline;width:480px;height:305px;background-color: #000000;transition: all 1s;position:absolute;z-index: 1;margin-top:551px;right: 514px;"></div>
+        <div id="black8"
+             style="display: inline;width:480px;height:304px;background-color: #000000;transition: all 1s;position:absolute;z-index: 1;margin-top:552px;right: 25px;"></div>
+
+        <img src="img-001.jpg" style="width:888px; margin-left:40px; margin-top: 38px;">
+        <img src="text-pcsmall.png"
+             style="width:450px;margin-left: 36px; margin-bottom: 40px;height:432px ">
+        <img src="img-002.jpg"
+             style="margin-left: 40px; width:475px;margin-top: 10px;margin-right: 10px;margin-bottom: 50px">
+        <img src="img-003.jpg" style="width:475px;margin-right: 10px;margin-bottom: 50px">
+        <img src="img-004.jpg" style=" width:475px;margin-bottom: 50px">
+
+    </div>
+    <div id="playstyle" style="background-color: white; margin-top: -290px;">
+        <img src="bg-headline-center.png" style="width:100%; position: absolute;">
+        <img id="left" src="bg-headline-left.png"
+             style="width:100%; position: absolute;transition:all 1s;transform:translate(0,5%); ">
+        <img id="right" src="bg-headline-right.png"
+             style="width:100%; position: absolute;transition:all 1s; transform: translate(0,20%);">
+
+        <img src="headline-001.png" style="position: absolute;width:600px;left:450px;top:420px;">
+        <img src="headline-002.png" style="position: absolute; width:130px;left:680px;top:500px;">
+    </div>
+    <div id="method3" style="background-color: white;">
+        <div style="display: inline-block;width:30%;margin-top: 20px;margin-left: 40px;height: 800px;line-height: 2.5em">
+            <div id="floatimg1" style="height:465px;">
+                <div id="black01"
+                     style="z-index:1;position:absolute;height:465px;width:465px;background-color: #000000;transition:all 1s;"></div>
+
+                <div class="tv" style="position: absolute;z-index:3; background-image: url(tv01.jpg);"
+                     id="tv1"></div>
+                <div class="tv" style="position: absolute;z-index:2; background-image: url(tv02.jpg);"
+                     id="tv2"></div>
+                <div class="tv"
+                     style="width:0;position: absolute;z-index 1; background-image: url(tv03.jpg);"
+                     id="tv3"></div>
+            </div>
+            <div style="background-color: #000000;text-align: center;height:80px;width:86%;position:relative;left:40px;bottom:30px;z-index: 4;">
+                <img src="h-01-jp.png" style="width: 120px;margin-top: 10px">
+
+                <div style="background-color: white;width:375px;margin-left:2%;vertical-align:middle;margin-top: 0;height:26px;">
+                    <img src="h-01-en.png" style="width: 80px; margin-top: 5px;"></div>
+            </div>
+            <div>
+                <img src="lead-01.png" style="width:320px;margin-left: 70px;margin-bottom: 40px">
+            </div>
+            透過連接電視畫面，無論大人或小朋友都可一起遊玩的遊戲，集合朋友或開派對最適合不過。
+        </div>
+        <div style="display: inline-block;width:30%;margin-left:30px;margin-top: 20px;height: 800px;line-height: 2.5em"
+        ">
+        <div id="floatimg2" style="height:465px;">
+            <div id="black02"
+                 style="z-index:1;position:absolute;height:465px;width:465px;background-color: #000000;transition:all 1s;"></div>
+            <div class="tv" style="z-index:3;position: absolute;background-image: url(table01.jpg);"
+                 id="table1"></div>
+            <div class="tv" style="z-index:2;position: absolute;background-image: url(table02.jpg);"
+                 id="table2"></div>
+            <div class="tv"
+                 style="width:0;z-index:1;position: absolute;background-image: url(table03.jpg);"
+                 id="table3"></div>
+
+        </div>
+        <div style="background-color: #000000;text-align: center;height:80px;width:86%;position:relative;left:40px;bottom:30px;z-index: 4;">
+            <img src="h-02-jp.png" style="width: 120px;margin-top: 10px">
+
+            <div style="background-color: white;width:375px;margin-left:2%;vertical-align:middle;margin-top: 0;height:26px;">
+                <img src="h-02-en.png" style="width: 120px; margin-top: 5px;"></div>
+        </div>
+        <div>
+            <img src="lead-02.png" style="width:320px;margin-left: 70px;margin-bottom: 40px">
+        </div>
+        將主機背面的支架拉出，即使在沒有電視的地方，和朋友分享「Joy-Con™」和畫面即可進行對戰或協力遊戲。
+    </div>
+    <div style="display: inline-block;width:30%;margin-left:30px;margin-top: 20px;height: 800px;line-height: 2.5em"
+    ">
+    <div id="floatimg3" style="height:465px;">
+        <div id="black03"
+             style="z-index:1;position:absolute;height:465px;width:465px;background-color: #000000;transition:all 1s;"></div>
+        <div class="tv" style="z-index:3;position: absolute;background-image: url(hh01.jpg);"
+             id="hh1"></div>
+        <div class="tv" style="z-index:2;position: absolute;background-image: url(hh02.jpg);"
+             id="hh2"></div>
+        <div class="tv" style="z-index:1;width:0;position: absolute;background-image: url(hh03.jpg);"
+             id="hh3"></div>
+
+    </div>
+    <div style="background-color: #000000;text-align: center;height:80px;width:86%;position:relative;left:40px;bottom:30px;z-index: 4;">
+        <img src="h-03-jp.png" style="width: 120px;margin-top: 10px">
+
+        <div style="background-color: white;width:375px;margin-left:2%;vertical-align:middle;margin-top: 0;height:26px;">
+            <img src="h-03-en.png" style="width: 120px; margin-top: 5px;"></div>
+    </div>
+    <div>
+        <img src="lead-03.png" style="width:320px;margin-left: 70px;margin-bottom: 40px">
+    </div>
+    將和電視畫面一樣的遊戲體驗帶到手中，無論何時何地也可享受超越手提遊戲機概念的遊戲。
+</div>
+</div>
+<div style="background-color: #000000; margin-top: 0;">
+    <div style="background-color: #000000; display:inline-block;width:1000px;height:666.66px;position:relative">
+        <img src="ph01.jpg" class="pic8" id="pic81" style="position: absolute">
+        <img src="ph02.jpg" class="pic8" id="pic82" style="position: absolute">
+        <img src="ph03.jpg" class="pic8" id="pic83" style="position: absolute">
+        <img src="ph04.jpg" class="pic8" id="pic84" style="position: absolute">
+
+
+    </div>
+    <div style="font-size:15px;background-color: #000000; display:inline-block;width: 450px;margin-left: 30px;position:relative;bottom:170px;">
+        <div style="background-color: white;color: cadetblue;width: 450px;font-size: 12px;height:20px;">&nbsp;&nbsp;&nbsp;鄰近主機通訊</div>
+        <img src="subheadline-pc.png" style="width:410px;margin-top: 20px;margin-left:0;">
+        <div style="color:white;width: 420px;margin-top: 20px;line-height: 2em;">只要持有「Nintendo
+            Switch」，就可利用鄰近主機通訊連接最多8台主機，進行對戰或協力遊戲等複數遊戲。
+        </div>
+        <div style="color:cadetblue;margin-top: 40px; background-color: white;width: 450px;font-size: 12px;height:20px;">
+            &nbsp;&nbsp;&nbsp;網路通訊
+        </div>
+        <div style="color:white;width: 420px;margin-top: 20px;line-height: 2em">加入「Nintendo
+            Switch」專用網上服務(付費)，也可和遠方的朋友或全世界的玩家進行對戰及協力遊戲。 與智慧型手機專用應用程式進行連動，可和朋友約見，也可一邊進行話音聊天，一邊玩遊戲。
+        </div>
+        <div style="color:white;margin-top:20px;  ">關於「Nintendo Switch」專用網上服務 (Coming Soon)</div>
+    </div>
+</div>
+<div style="background-color: white;height:700px;">
+    <img src="title_joycon01.png" id="left1"
+         style="width:188px; margin-left: 245px;margin-top: 80px;transition:all 1s;-webkit-transform: translate(0,20%);-moz-transform: translate(0,20%);-ms-transform: translate(0,20%);-o-transform: translate(0,20%);transform: translate(0,20%);opacity:0;">
+    <div style="display: inline-block;width:645px;text-align: center;position:relative;bottom: 200px;">
+        <img src="title_text01.png" style="width:480px;">
+        <div style="background-color: red;height:1.5px;width:480px;display:inline-block;"></div>
+        <img src="title_text02.png" style="width:352px;margin-top: 30px;  ">
+        <div style="margin-top: 30px;color:grey;">「Nintendo Switch」附有控制器「Joy-Con」左右各一。</div>
+    </div>
+    <img src="title_joycon02.png" id="right1"
+         style="width:188px; transition:all 1s;transform:translate(0,-20%);opacity:0;">
+</div>
+<div style="background-color: white;height:778px;">
+    <img src="img-body.png" style="position:absolute;width:672px;z-index: 1;">
+    <img id="righthand" src="img-right.png"
+         style="position:absolute;transition:all 1s;width:672px;z-index: 1;transform:translate(0,20%);">
+    <img src="photo-controller.jpg" style="position:absolute;width:980px;left:500px;">
+    <div style="position:relative;left:720px;top:590px;">將左右Joy-Con安裝到握把，雙手握著像一般的控制器，從握把取下，即變成「2個」獨立的控制器。</div>
+</div>
+<div style="background-color: white;height:2130px;">
+    <div id="black9"
+         style="display: inline;width:888px;height:577px;background-color: #000000;transition: all 1s;position:absolute;z-index: 1;margin-top:0;right: 591px;"></div>
+    <div id="black10"
+         style="display: inline;width:296px;height:287px;background-color: #000000;transition: all 1s;position:absolute;z-index: 1;margin-top:577px;right: 37px;"></div>
+    <div id="black11"
+         style="display: inline;width:580px;height:287px;background-color: #000000;transition: all 1s;position:absolute;z-index: 1;margin-top:577px;right:900px;"></div>
+    <div id="black12"
+         style="display: inline;width:574px;height:574px;background-color: #000000;transition: all 1s;position:absolute;z-index: 1;margin-top:862px;right: 905px;"></div>
+    <div id="black13"
+         style="display: inline;width:292px;height:292px;background-color: #000000;transition: all 1s;position:absolute;z-index: 1;margin-top:862px;right: 37px;"></div>
+    <div id="black14"
+         style="display: inline;width:725px;height:361px;background-color: #000000;transition: all 1s;position:absolute;z-index: 1;margin-top:1738px;right: 395px;"></div>
+    <div id="blackh1"
+         style="display: inline;width:577px;height:577px;background-color: #000000;transition: all 1s;position:absolute;z-index: 1;margin-top:577px;right: 329px;"></div>
+    <div id="blackh2"
+         style="display: inline;width:284px;height:284px;background-color: #000000;transition: all 1s;position:absolute;z-index: 1;margin-top:1152px;right: 620px;"></div>
+    <div id="blackh3"
+         style="display: inline;width:585px;height:585px;background-color: #000000;transition: all 1s;position:absolute;z-index: 1;margin-top:1152px;right: 37px;"></div>
+    <div id="blackh4"
+         style="display: inline;width:361px;height:361px;background-color: #000000;transition: all 1s;position:absolute;z-index: 1;margin-top:1738px;right: 1120px;"></div>
+    <div id="blackh5"
+         style="display: inline;width:361px;height:361px;background-color: #000000;transition: all 1s;position:absolute;z-index: 1;margin-top:1738px;right: 37px;"></div>
+    <img src="pic_01.jpg" class="pics" style="height:577px;margin-left: 40px;"><img
+        src="text_01.png" class="pics" style="height:577px;margin-left: 0">
+    <img src="pic_02.jpg" class="pics"
+         style="height:287px;margin-left: 40px;position:relative;bottom:294px;"><img src="pic_03.jpg"
+                                                                                     class="pics"
+                                                                                     style="height:577px;position:relative;bottom:4px;"><img
+        src="pic_04.jpg" class="pics" style="height:292px;position:relative;bottom:289px;">
+    <img src="pic_06.jpg" class="pics"
+         style="margin-left:40px;width:574px;position:relative;bottom:298px; ">
+    <img src="pic_05.jpg" class="pics"
+         style="width:292px;position:relative;left:572px; bottom:582px;">
+    <img src="pic_07.jpg" class="pics"
+         style="width:284px;position:relative; right:301px;bottom:298px;">
+    <img src="text_02.png" class="pics"
+         style="margin-left:40px;width:858px;height:301px;position:relative;bottom:586px;">
+    <img src="pic_08.jpg" class="pics" style="width:585px;position:relative;bottom:586px;right:4px;">
+    <img src="pic_10.jpg" style="margin-left:40px;width:361px;position:relative;bottom:590px "
+         class="pics"><img src="pic_09.jpg" style="position:relative;bottom:590px;width:722px;"
+                           class="pics"><img src="pic_11.jpg"
+                                             style="position:relative;width:361px;bottom:590px" class="pics">
+
+</div>
+<div id="bg1"
+     style="transition:all 10s;background-image: url(bg.png);background-color: white;height:630px;-webkit-background-size:cover;background-size:cover;">
+
+    <img src="headline-pc_sp.png"
+         style="width:505px;margin-left: 81px;position:relative;bottom:160px; ">
+
+    <div style="display:inline-block;margin-left: 100px;">
+        <div style="margin-top:60px;background-color:red;color:white;height:38px;width:170px;font-size: 21px;text-align:center;line-height:38px;">
+            從震動到觸感
+        </div>
+        <div class="font" style="margin-top: 30px;">搖動「Joy-Con」，</div>
+        <div class="font">即可感受其細膩真實的觸感。</div>
+        <div class="font">「Joy-Con」內置的「HD震動」，</div>
+        <div class="font">將在影像和音響無法感受的臨場感加進遊戲裡。</div>
+        <div style="margin-top:50px;background-color:red;color:white;height:38px;width:320px;font-size: 21px;text-align:center;line-height:38px;">
+            讀取物件的形狀、動作和距離
+        </div>
+        <div>
+            <img src="illust.png" style="width:150px;margin-top: 20px;">
+            <div style="display: inline-block;margin-left: 20px;position: relative;bottom:20px;">
+                <div class="font">「Joy-Con(R)」內置的「動感IR照相機」</div>
+                <div class="font">會讀取照相機捕捉的物件形狀、動作和距離。</div>
+                <div class="font">例如可辨識剪頭布的手勢，</div>
+                <div class="font">是目前為止沒有的獨特輸入操作。</div>
+            </div>
+        </div>
+    </div></div>
+    <div style="background-image: url(img-foot.jpg);background-size: 100% 100%;height:720px;"></div>
+    <div style="background-color:red; ">
+        <div style="height:100px;"></div>
+        <div style="text-align: center;"><img src="switch-white.svg" style="height:215px;"></div>
+        <div style="height:80px;"></div>
+        <div style="text-align: center;"><img src="text_releasedate.png" style="width:680px;"></div>
+        <div style="background-color: white;width:960px;height:5px;text-align:center;margin-top: 30px;margin-left:18.5%;"></div>
+        <div style="margin-top: 50px;"></div>
+        <div style="display: inline-block;margin-left: 280px;position: relative;" onmouseover="xs(1)"
+             onmouseout="nxs(1)">
+            <div id="hov1"
+                 style="width:310px;height:220px;opacity:0.4;background-color:red;position:absolute;z-index: 1;display:none"></div>
+
+            <img src="icon_play.svg"
+                 style="position: absolute;opacity: 0.5;width:50px;left:130px;top:65px;">
+            <img src="video01.jpg" style="width:310px;">
+            <div style="color:white;">Nitendo Switch 概念影片</div>
+            <div style="color: darkgray;font-size:13px;">公開日期:2017.1.13</div>
+        </div>
+        <div style="display: inline-block;margin-left: 5px;position: relative;" onmouseover="xs(2)" onmouseout="nxs(2)">
+            <div id="hov2"
+                 style="width:310px;height:220px;opacity:0.4;background-color:red;position:absolute;z-index: 1;display:none"></div>
+
+            <img src="icon_play.svg"
+                 style="position: absolute;opacity: 0.5;width:50px;left:130px;top:65px;">
+            <img src="video02.jpg" style="width:310px;">
+            <div style="color:white;">Nitendo Switch Play Style 介绍影片</div>
+            <div style="color:darkgray;font-size:13px; ">公開日期:2017.1.13</div>
+        </div>
+        <div style="display: inline-block;margin-left: 5px;position:relative;" onmouseover="xs(3)" onmouseout="nxs(3)">
+            <div id="hov3"
+                 style="width:310px;height:220px;opacity:0.4;background-color:red;position:absolute;z-index: 1;display:none"></div>
+
+            <img src="icon_play.svg"
+                 style="position: absolute;opacity: 0.5;width:50px;left:130px;top:65px;">
+            <img src="video03.jpg" style="width:310px;">
+            <div style="color:white;">First Look at Nintendo Switch</div>
+            <div style="color:darkgray;font-size:13px;">公開日期:2016.10.20</div>
+        </div>
+        <div style="margin-left:17%;width:1000px;margin-top: 15px;text-align: center;" onmouseover="xs(4)"
+             onmouseout="nxs(4)">
+            <div id="hov4"
+                 style="left:17%;width:1000px;height:250px;opacity:0.4;background-color:white;position:absolute;z-index: 1;display: none;"></div>
+            <img src="presentation_btn.jpg" style="width:1000px;"></div>
+        <div style="background-color: white;margin-top: 40px;height:5px;width:1000px;margin-left: 260px;"></div>
+        <div style="width:1000px;margin-left:17%;background-color:red;margin-top: 40px;text-align: center"
+             onmouseover="xs(5)" onmouseout="nxs(5)">
+            <div id="hov5"
+                 style="left:17%;width:1000px;height:250px;opacity:0.4;background-color:white;position:absolute;z-index: 1;display: none;"></div>
+            <img src="btn01.jpg" style="width:1000px;"></div>
+        <div style="margin-top: 5px;text-align: center;">
+
+            <div style="display:inline-block;width:497.5px;height:250px;" onmouseover="xs(6)" onmouseout="nxs(6)">
+                <div id="hov6"
+                     style="left:17%;width:497.5px;height:250px;opacity:0.4;background-color:white;position:absolute;z-index: 1;display: none;"></div>
+
+                <img src="btn02.jpg" style="width: 497.5px;"></div>
+            <div style="display:inline-block;width:497.5px;height:250px;" onmouseover="xs(7)" onmouseout="nxs(7)">
+                <div id="hov7"
+                     style="left:50.4%;width:497.5px;height:250px;opacity:0.4;background-color:white;position:absolute;z-index: 1;display: none;"></div>
+
+                <img src="btn03.jpg" style="margin-left: 5px;width:497.5px;"></div>
+        </div>
+        <div style="display:inline-block;margin-top: 5px;width:497.5px;height:250px;" onmouseover="xs(8)"
+             onmouseout="nxs(8)">
+            <div id="hov8"
+                 style="left:17%;width:497.5px;height:250px;opacity:0.4;background-color:white;position:absolute;z-index: 1;display: none;"></div>
+
+            <img src="btn04.jpg" style="width:497.5px;margin-left: 257px;">
+        </div>
+        <div style="margin-top: 40px;width:1000px;height:4px;background-color: white;margin-left: 265px;"></div>
+        <div style="height:250px;width:1000px;display:inline-block;margin-left:259px;margin-top:40px;text-align: center"
+             onmouseover="xs(9)" onmouseout="nxs(9)">
+            <div id="hov9"
+                 style="left:17%;width:1000px;height:250px;opacity:0.4;background-color:white;position:absolute;z-index: 1;display:none;"></div>
+            <img src="software_list_btn.jpg" style="width:1000px;"></div>
+        <div style="margin-left:180px;margin-top:150px;color:white;vertical-align: middle;font-size: 12px;"><img
+                src="logo - 副本.svg" style="width:100px;position: relative;top:7px;"><a
+                href="http://www.nintendo.com.hk/hardware/switch/index.html">&nbsp;<span
+                style="font-size: 20px;">></span>&nbsp;Nintendow Switch</a></div>
+        <div style="margin-top: 70px;height:45px;">
+            <a href="http://www.nintendo.com.hk/index.htm"
+               style="font-size: 11.5px;margin-left: 200px;">任天堂(香港)有限公司主頁</a>
+            <a class="ahref" href="http://www.nintendo.com.hk/pressrelease/switch_20170113.html">Press Release</a>
+            <a class="ahref" href="http://www.nintendo.com.hk/switch/support/">技術支援</a>
+            <a class="ahref" href="http://www.nintendo.com.hk/switch/repair.html">聯絡查詢</a>
+            <a class="ahref" href="http://www.nintendo.com.hk/hardware/switch/store/">銷售店舖一覽</a>
+
+        </div>
+        <div style="color:white;font-size: 10px;position:relative;left:1270px;bottom:30px; ">© Nintendo</div>
+    </div>
+
+    <script>
+        function startflow(a) {
+            if (a == 18) {
+                a = 1;
+            }
+            var top = document.getElementById("top" + a);
+            var top0 = document.getElementById("top0");
+            top.style.zIndex = 1;
+            top.style.transform = "scale(1.1)";
+            top0.style.transform = "translate(0,100%)";
+            // setTimeout(function(){top0.style.zIndex=-2},3000);
+            // setTimeout(function(){top0.style.display="none";},3000);
+            setTimeout(function () {
+                top0.style.transform = "translate(0,-100%)"
+            }, 3000);
+            //  setTimeout(function(){top0.style.transition="all 3s";},4000);
+            //   setTimeout(function(){top0.style.display="block"},6000);
+            setTimeout(function () {
+                top0.style.transform = "translate(0,0)"
+            }, 6000);
+            setTimeout(function () {
+                top.style.zIndex = 0
+            }, 9000);
+
+
+            setTimeout(function () {
+                startflow((a - 0 + 1))
+            }, 9000);
+
+        }
+
+        startflow(1);
+
+        function windowop() {
+            window.open("http://www.nintendo.com.hk/index.htm");
+        }
+
+        function scrollWindow() {
+            var obj = document.getElementById("tops");
+            obj.style.transition = "all 0.5s";
+            obj.style.transform = "translate(0,-200%)";
+            window.scrollTo(0, 414.4);
+        }
+
+        window.addEventListener('scroll', function () {
+            var obj = document.documentElement.scrollTop;
+            var obj0 = document.getElementById("tops");
+            if (obj == 0) {
+                obj0.style.transform = "translate(0,0)";
+            }
+            if (obj != 0) {
+                obj0.style.transition = "all 0.5s";
+                obj0.style.transform = "translate(0,-200%)";
+            }
+            var floatpic1 = document.getElementById("floatpic");
+            if (obj > 0 && obj < 914.4) {
+
+                floatpic1.style.opacity = 1;
+            } else {
+                floatpic1.style.opacity = 0;
+            }
+            var bcg = document.getElementById("bcgimg");
+            if (obj >= 1369) {
+                bcg.style.backgroundImage = "url(bg1.jpg)";
+            }
+            else {
+                bcg.style.backgroundImage = "url(bg.jpg)";
+            }
+            var floatpic2 = document.getElementById("floatpic2");
+            if (obj > 1703 && obj < 3395) {
+                floatpic2.style.opacity = 1;
+            }
+            else {
+                floatpic2.style.opacity = 0;
+            }
+            var stylel = document.getElementById("left");
+            var styler = document.getElementById("right");
+            if (obj >= 3350) {
+                stylel.style.transform = "translate(0,0)";
+                styler.style.transform = "translate(0,0)";
+            }
+            var righthand = document.getElementById("righthand");
+            if (obj >= 6000) {
+                righthand.style.transform = "translate(0,0)";
+            }
+            var left = document.getElementById("left1");
+            var right = document.getElementById("right1");
+            if (obj >= 5600) {
+                left.style.transform = "translate(0,0)";
+                left.style.opacity = 1;
+                right.style.transform = "translate(0,0)";
+                right.style.opacity = 1;
+            }
+            var black1 = document.getElementById("black1");
+            var black2 = document.getElementById("black2");
+            var black3 = document.getElementById("black3");
+            var black4 = document.getElementById("black4");
+            var black5 = document.getElementById("black5");
+            var black6 = document.getElementById("black6");
+            var black7 = document.getElementById("black7");
+            var black8 = document.getElementById("black8");
+
+            if (obj >= 687.2) {
+                black1.style.width = 0;
+            }
+            if (obj >= 1187.2) {
+                black2.style.width = 0;
+                black3.style.width = 0;
+                black4.style.width = 0;
+            }
+            if (obj >= 2528) {
+                black5.style.width = 0;
+            }
+            if (obj >= 2928) {
+                black6.style.width = 0;
+                black7.style.width = 0;
+                black8.style.width = 0;
+            }
+            var black9 = document.getElementById("black9");
+            var black10 = document.getElementById("black10");
+            var black11 = document.getElementById("black11");
+            var black12 = document.getElementById("black12");
+            var black13 = document.getElementById("black13");
+            var black14 = document.getElementById("black14");
+            var blackh1 = document.getElementById("blackh1");
+            var blackh2 = document.getElementById("blackh2");
+            var blackh3 = document.getElementById("blackh3");
+            var blackh4 = document.getElementById("blackh4");
+            var blackh5 = document.getElementById("blackh5");
+            if (obj >= 6500) {
+                black9.style.width = 0;
+            }
+            if (obj >= 7000) {
+                black10.style.width = 0;
+                black11.style.width = 0;
+                blackh1.style.height = 0;
+            }
+            if (obj >= 7300) {
+                black12.style.width = 0;
+                black13.style.width = 0;
+            }
+            if (obj >= 7592) {
+                blackh2.style.height = 0;
+                blackh3.style.height = 0;
+            }
+            if (obj >= (7592 + 577)) {
+                blackh4.style.height = 0;
+                blackh5.style.height = 0;
+                black14.style.width = 0;
+            }
+            var black01 = document.getElementById("black01");
+            var black02 = document.getElementById("black02");
+            var black03 = document.getElementById("black03");
+            if (obj >= 3728) {
+                black01.style.width = 0;
+                black02.style.width = 0;
+                black03.style.width = 0;
+                stratslide();
+            }
+        });
+
+        function flash() {
+            var f1 = document.getElementById("pic81");
+            var f2 = document.getElementById("pic82");
+            var f3 = document.getElementById("pic83");
+            var f4 = document.getElementById("pic84");
+            var i;
+
+            setTimeout(function () {
+                f1.style.opacity = 0;
+                f2.style.opacity = 0;
+                f3.style.opacity = 0;
+                f4.style.opacity = 0
+            }, 2000);
+            setTimeout(function () {
+                f1.style.opacity = 1;
+            }, 3000);
+            setTimeout(function () {
+                f1.style.opacity = 0;
+                f2.style.opacity = 0;
+                f3.style.opacity = 0;
+                f4.style.opacity = 0
+            }, 5000);
+            setTimeout(function () {
+                f2.style.opacity = 1;
+            }, 6000);
+            setTimeout(function () {
+                f1.style.opacity = 0;
+                f2.style.opacity = 0;
+                f3.style.opacity = 0;
+                f4.style.opacity = 0
+            }, 8000);
+            setTimeout(function () {
+                f3.style.opacity = 1;
+            }, 9000);
+            setTimeout(function () {
+                f1.style.opacity = 0;
+                f2.style.opacity = 0;
+                f3.style.opacity = 0;
+                f4.style.opacity = 0
+            }, 11000);
+            setTimeout(function () {
+                f4.style.opacity = 1;
+            }, 12000);
+
+            setTimeout("flash()", 12000);
+
+
+        }
+
+        flash();
+
+        function stratslide() {
+            var tv1 = document.getElementById("tv1");
+            var tv2 = document.getElementById("tv2");
+            var tv3 = document.getElementById("tv3");
+            var table1 = document.getElementById("table1");
+            var table2 = document.getElementById("table2");
+            var table3 = document.getElementById("table3");
+            var hh1 = document.getElementById("hh1");
+            var hh2 = document.getElementById("hh2");
+            var hh3 = document.getElementById("hh3");
+
+
+            setTimeout(function () {
+                tv3.style.zIndex = 3;
+                tv1.style.zIndex = 2;
+                tv2.style.zIndex = 1;
+            }, 2000);
+            setTimeout(function () {
+                tv3.style.width = "465px";
+            }, 3000);
+            setTimeout(function () {
+                tv2.style.width = 0;
+            }, 4000);
+            setTimeout(function () {
+                tv2.style.zIndex = 3;
+                tv3.style.zIndex = 2;
+                tv1.style.zIndex = 1;
+            }, 5000);
+            setTimeout(function () {
+                tv2.style.width = "465px";
+            }, 6000);
+            setTimeout(function () {
+                tv1.style.width = 0;
+            }, 7000);
+            setTimeout(function () {
+                tv1.style.zIndex = 3;
+                tv2.style.zIndex = 2;
+                tv3.style.zIndex = 1;
+            }, 8000);
+            setTimeout(function () {
+                tv1.style.width = "465px";
+            }, 9000);
+            setTimeout(function () {
+                tv3.style.width = 0;
+            }, 10000);
+            setTimeout("stratslide()", 12000);
+
+            setTimeout(function () {
+                table3.style.zIndex = 3;
+                table1.style.zIndex = 2;
+                table2.style.zIndex = 1;
+            }, 2000);
+            setTimeout(function () {
+                table3.style.width = "465px";
+            }, 3000);
+            setTimeout(function () {
+                table2.style.width = 0;
+            }, 4000);
+            setTimeout(function () {
+                table2.style.zIndex = 3;
+                table3.style.zIndex = 2;
+                table1.style.zIndex = 1;
+            }, 5000);
+            setTimeout(function () {
+                table2.style.width = "465px";
+            }, 6000);
+            setTimeout(function () {
+                table1.style.width = 0;
+            }, 7000);
+            setTimeout(function () {
+                table1.style.zIndex = 3;
+                table2.style.zIndex = 2;
+                table3.style.zIndex = 1;
+            }, 8000);
+            setTimeout(function () {
+                table1.style.width = "465px";
+            }, 9000);
+            setTimeout(function () {
+                table3.style.width = 0;
+            }, 10000);
+
+
+            setTimeout(function () {
+                hh3.style.zIndex = 3;
+                hh1.style.zIndex = 2;
+                hh2.style.zIndex = 1;
+            }, 2000);
+            setTimeout(function () {
+                hh3.style.width = "465px";
+            }, 3000);
+            setTimeout(function () {
+                hh2.style.width = 0;
+            }, 4000);
+            setTimeout(function () {
+                hh2.style.zIndex = 3;
+                hh3.style.zIndex = 2;
+                hh1.style.zIndex = 1;
+            }, 5000);
+            setTimeout(function () {
+                hh2.style.width = "465px";
+            }, 6000);
+            setTimeout(function () {
+                hh1.style.width = 0;
+            }, 7000);
+            setTimeout(function () {
+                hh1.style.zIndex = 3;
+                hh2.style.zIndex = 2;
+                hh3.style.zIndex = 1;
+            }, 8000);
+            setTimeout(function () {
+                hh1.style.width = "465px";
+            }, 9000);
+            setTimeout(function () {
+                hh3.style.width = 0;
+            }, 10000);
+
+        }
+
+        stratslide();
+
+        function xs(a) {
+            var hova = document.getElementById("hov" + a);
+            hova.style.display = "block";
+        }
+
+        function nxs(a) {
+            var hova = document.getElementById("hov" + a);
+            hova.style.display = "none";
+        }
+
+    </script>
+    </body>
+</html>
