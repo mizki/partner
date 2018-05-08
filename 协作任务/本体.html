@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    .top{
+        margin-left:31px;
+        margin-top: 25px;
+    }
+        .block
+        {
+           
+            transition:transform 1s;
+        }
+
+    </style>
+</head>
+<body style="margin:0;overflow-x: hidden;overflow-y: hidden;">
+<div class="top">
+<img src="blur-book-girl-373465_06.gif"><p style="font-size:22px;color: darkslategrey;display:inline;vertical-align: center;"> Explore</p>
+    <div style="position:relative;top:5px;display:inline-block;margin-left: 20px;background-color: #cccccc;height: 32px;width:2px;"></div>
+    <img src="blur-book-girl-373465_03.gif" style="text-align:center;position:relative;top:25px;left:30%;">
+<img src="blur-book-girl-373465_13.gif" style="float:right;margin-right:40px;margin-top: 26px;">
+<img src="blur-book-girl-373465_10.gif" style="float:right;margin-right:40px;margin-top: 26px;">
+<img src="blur-book-girl-373465_16.gif" style="float:right;margin-right:40px;margin-top: 26px;">
+</div>
+<div style="margin-top: 44px;">
+ <p id="font1" style="margin-bottom:0;color:darkslategrey;font-size:22px;display:inline-block;margin-left: 70px;font-weight: bold;" onclick="To(1)">HOME</p>
+ <p id="font2"  style="margin-bottom:0;color:darkslategrey;font-size:22px;display:inline-block;margin-left: 100px;" onclick="To(2)">RECOMMENED</p>
+ <p id="font3" style="margin-bottom:0;color:darkslategrey;font-size:22px;display:inline-block;margin-left: 100px;" onclick="To(3)">SHOP</p>
+    <div style="margin-top: 0;">
+    <div id="color1" style="color:darkslategrey;position:relative;bottom:6px;display:inline-block;background-color: black;width:74px;height:4px;margin-left:70px "></div>
+    <div id="color2" style="color:darkslategrey;visibility: hidden;position:relative;bottom:6px;display:inline-block;background-color: black;width:158px;height:4px;margin-left:100px "></div>
+    <div id="color3" style="color:darkslategrey;visibility: hidden;position:relative;bottom:6px;display:inline-block;background-color: black;width:62px;height:4px;margin-left:98px "></div>
+    </div>
+</div>
+<div>
+<div  class="block" id="block1" style="position:absolute;background-repeat:no-repeat;margin-left:70px;margin-right:40px;width:91%;height:550px;background-size:100%;background-image: url(blur-book-girl-373465_03.png)">
+
+    <div style="background-color: black;opacity: 0.4;position:relative;top:111px;height:378px;width:53%;left:78px;border-radius:20px;">
+        <div style="color:white;font-size:22px;position:relative;left:282px;top:42px;">SIGN IN</div>
+        <div style="color:white;font-size:22px;position:relative;left:33px;top:70px;">
+        Username  &nbsp;&nbsp; <input type="text"style="height:28px;width:500px;">
+        </div>
+        <div style="color:white;font-size:22px;position:relative;left:33px;top:120px;">
+            Password  &nbsp;&nbsp;&nbsp; <input type="text"style="height:28px;width:500px;">
+        </div>
+        <div style="left:600px;width:65px;line-height:1.8em;top:130px;position:relative;border:white 2px solid;border-radius:10px;color:white;font-size: 18px;">
+            &nbsp;forget</div>
+        <div style="left:30px;background-color: white;height:2.5px;width:650px;position: relative;top:140px;"></div>
+        <div style="color:white;font-size: 22px;position:relative;left:30px;top:140px;">New to amazon?</div>
+        <div style="left:460px;width:255px;line-height:1.8em;top:130px;position:relative;border:white 2px solid;border-radius:10px;color:white;font-size: 18px;">
+            &nbsp;create your amazon account
+    </div>
+</div>
+</div>
+<div  class="block" id="block2" style="background-color: gainsboro;position:absolute;width:100%;height:470px;transform: translate(100%)">
+ <img src="推荐页_06.png" style="margin-top: 60px;margin-left: 55px;width:320px;" onclick="move()">
+ <img src="商店_06.png" style="margin-top: 60px;margin-left: 55px;width:320px;height:355px;">
+ <img src="推荐页_12.png" style="margin-top: 60px;margin-left: 55px;width:320px;">
+ <img src="推荐页_03.png" style="margin-top: 60px;margin-left: 55px;width:320px;">
+    <div style="font-size:20px;margin-top: 10px; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;￥27.69&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;￥28.87&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;￥27.45&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;￥27.30</div>
+    <div style="border-radius:7.5px;height:25px;border-color: brown;color:brown;border:2px solid;width:105px;position:relative;top:8%;left:45%;">
+        &nbsp;&nbsp;Learn more
+    </div>
+</div>
+    <div class="block" id="block3" style="transform: translate(200%);position:absolute;width:100%;" >
+        <div style="text-align: center;font-size: 22px;">1&nbsp;/&nbsp;2</div>
+        <div style="width:52px;height:444px;display:inline-block;background-color: #e9e1d5;"><img src="商店_12.png" style="position:absolute;left:10px;top:40%;" onclick="change(1)"></div><div style="width:93%;height:444px;display:inline-block;background-color:#e8e8e5;">
+        <div style="display:inline-block;width:190px;height:213.5px;margin:0;transition:opacity 1s;"><img  id="img1" style="opacity:1;height:220px; " src="商店_03.png"><div style="display: inline-block;position:absolute;top:55px;opacity:0;transition:opacity 1s;"id="div1"><div style="margin-left: 20px;">嫌疑人X的现身</div><div style="color:#67b374;margin-left: 20px;">东野圭吾</div><img style="margin-left: 20px;"src="商品页_33.png"><div style="margin-left: 20px;">￥27.69</div></div></div>
+        <div style="display:inline-block;width:190px;height:213.5px;margin:0;transition:opacity 1s;"><img  id="img2" style="opacity:0;height:220px; " src="商店_10.png"><div style="display: inline-block;position:absolute;top:55px;opacity:1;transition:opacity 1s;"id="div2"><div style="margin-left: 20px;">罗生门</div><div style="color:#67b374;margin-left: 20px;">芥川龙之介</div><img style="margin-left: 20px;"src="商品页_33.png"><div style="margin-left: 20px;">￥26.67</div></div></div>
+        <div style="display:inline-block;width:190px;height:213.5px;margin:0;transition:opacity 1s;"><img  id="img3" style="opacity:1;height:220px;width:210px; " src="商店_06.png"><div style="display: inline-block;position:absolute;top:55px;opacity:0;transition:opacity 1s;"id="div3"><div style="margin-left: 20px;">月亮与六便士</div><div style="color:#67b374;margin-left: 20px;">毛姆</div><img style="margin-left: 20px;"src="商品页_33.png"><div style="margin-left: 20px;">￥27.28</div></div></div>
+        <div style="display:inline-block;width:190px;height:213.5px;margin:0;transition:opacity 1s;"><img  id="img4" style="opacity:0;height:220px; " src="商店_09.png"><div style="display: inline-block;position:absolute;top:55px;opacity:1;transition:opacity 1s;"id="div4"><div style="margin-left: -130px;">人间草木</div><div style="color:#67b374;margin-left: -130px;">汪曾祺</div><img style="margin-left: -130px;"src="商品页_33.png"><div style="margin-left: -130px;">￥27.28</div></div></div>
+        <div style="display:inline-block;width:190px;height:213.5px;margin:0;transition:opacity 1s;"><img  id="img5" style="opacity:1;height:220px; " src="商店_08.png"><div style="display: inline-block;position:absolute;top:55px;opacity:0;transition:opacity 1s;"id="div5"><div style="margin-left: 20px;">局外人</div><div style="color:#67b374;margin-left: 20px;">加缪</div><img style="margin-left: 20px;"src="商品页_33.png"><div style="margin-left: 20px;">￥27.69</div></div></div>
+        <div style="display:inline-block;width:190px;height:213.5px;margin:0;transition:opacity 1s;"><img  id="img6" style="opacity:0;height:220px; " src="商店_11.png"><div style="display: inline-block;position:absolute;top:55px;opacity:1;transition:opacity 1s;"id="div6"><div style="margin-left: 20px;">岛上书店</div><div style="color:#67b374;margin-left: 20px;">嘉布埃瑞拉.泽文</div><img style="margin-left: 20px;"src="商品页_33.png"><div style="margin-left: 20px;">￥27.69</div></div></div>
+        <div style="display:inline-block;width:190px;height:213.5px;margin:0;transition:opacity 1s;"><img  id="img7" style="opacity:1;height:220px; " src="商店_10.png"><div style="display: inline-block;position:absolute;top:55px;opacity:0;transition:opacity 1s;"id="div7"><div style="margin-left: 20px;">罗生门</div><div style="color:#67b374;margin-left: 20px;">芥川龙之介</div><img style="margin-left: 20px;"src="商品页_33.png"><div style="margin-left: 20px;">￥26.67</div></div></div>
+        <div style="position:relative;top:-1px;">                                                                                                                                                                 
+        <div style="display:inline-block;width:190px;height:213.5px;margin:0;transition:opacity 1s;"><img id="img8" style="opacity:0;height:220px; " src="商店_19.png"><div style="display: inline-block;position:absolute;top:55px;opacity:0;transition:opacity 1s;"id="div8"><div style="margin-left: 20px;"></div><div style="color:#67b374;margin-left: 20px;"></div><div></div></div></div>
+        <div style="display:inline-block;width:190px;height:213.5px;margin:0;transition:opacity 1s;"><img id="img9" style="opacity:1;height:220px; " src="商店_16.png"><div style="display: inline-block;position:absolute;top:55px;opacity:0;transition:opacity 1s;"id="div9"><div style="margin-left: 20px;">烟火人间</div><div style="color:#67b374;margin-left: 20px;">老舍</div><img style="margin-left: 20px;"src="商品页_33.png"><div style="margin-left: 20px;">￥26.67</div></div></div>
+        <div style="display:inline-block;width:190px;height:213.5px;margin:0;transition:opacity 1s;"><img id="img10" style="opacity:0;height:220px; " src="商店_21.png"><div style="display: inline-block;position:absolute;top:55px;opacity:1;transition:opacity 1s;"id="div10"><div style="margin-left: 20px;">知更鸟</div><div style="color:#67b374;margin-left: 20px;">尤·奈斯博</div><img style="margin-left: 20px;"src="商品页_33.png"><div style="margin-left: 20px;">￥29.90</div></div></div>
+        <div style="display:inline-block;width:190px;height:213.5px;margin:0;transition:opacity 1s;"><img id="img11" style="opacity:1;height:220px; " src="商店_18.png"><div style="display: inline-block;position:absolute;top:55px;opacity:0;transition:opacity 1s;"id="div11"><div style="margin-left: 20px;">到世界上闯荡</div><div style="color:#67b374;margin-left: 20px;">刘墉</div><img style="margin-left: 20px;"src="商品页_33.png"><div style="margin-left: 20px;">￥29.90</div></div></div>
+        <div style="display:inline-block;width:190px;height:213.5px;margin:0;transition:opacity 1s;"><img id="img12" style="opacity:0;height:220px; " src="商店_26.png"><div style="display: inline-block;position:absolute;top:55px;opacity:1;transition:opacity 1s;"id="div12"><div style="margin-left: 20px;">自在独行</div><div style="color:#67b374;margin-left: 20px;">贾平凹</div><img style="margin-left: 20px;"src="商品页_33.png"><div style="margin-left: 20px;">￥28.83</div></div></div>
+        <div style="display:inline-block;width:190px;height:213.5px;margin:0;transition:opacity 1s;"><img id="img13" style="opacity:1;height:220px; " src="商店_20.png"><div style="display: inline-block;position:absolute;top:55px;opacity:0;transition:opacity 1s;"id="div13"><div style="margin-left: 20px;">万历十五年</div><div style="color:#67b374;margin-left: 20px;">黄仁宇</div><img style="margin-left: 20px;"src="商品页_33.png"><div style="margin-left: 20px;">￥29.22</div></div></div>
+        <div style="display:inline-block;width:190px;height:213.5px;margin:0;transition:opacity 1s;"><img id="img14" style="opacity:0;height:220px; " src="商店_28.png"><div style="display: inline-block;position:absolute;top:55px;opacity:1;transition:opacity 1s;"id="div14"><div style="margin-left: 20px;">慢煮生活</div><div style="color:#67b374;margin-left: 20px;">汪曾祺</div><img style="margin-left: 20px;"src="商品页_33.png"><div style="margin-left: 20px;">￥29.22</div></div></div>   </div>
+
+    </div><div style="width:52px;height:444px;display:inline-block;background-color: #e9e1d5;"><img src="商店_13.png" style="position:absolute;top:40%;" onclick="change(2)"></div>
+    </div>
+    <div  id="bookdetail" style="height:550px;background-color: #e8e8e5;transition:transform 1s;transform:translate(0,110%)">
+    <div style="display:inline-block;width:600px;" >
+    <img src="商品页_03.png" style="margin-left:70px;margin-top:30px;width:215px;">
+    <img src="商品页_06.png" style="margin-left:25px;margin-top:30px;width:215px;">
+    <img src="商品页_11.png" style="margin-top:25px;margin-left:70px;width:215px;">
+    <img src="商品页_13.png" style="margin-top:25px;margin-left:25px;width:215px;">
+
+    </div>
+        <div style="display:inline-block;position:relative;left:100px;">
+            <div id="name" style="font-size: 18px;">罗生门</div>
+            <div id="author"style="margin-top: 15px;color: #67b374;font-weight:bold;">芥川龙之介</div>
+            <div id="class" style="margin-top: 15px;">分类：外国当代</div>
+            <div style="margin-top: 20px;">
+            <img src="商品页_33.png"  style="position:relative;left:57.5%;">
+            <img src="商品页_05.png" style="position:relative;left:60%;">
+            </div>
+            <div style="background-color:black;height: 1.5px;width:650px;margin-top: 15px;"></div>
+            <div style="margin-top: 20px;" >
+                <div id="priceP" style="height:50px;font-size:18px;display:inline;border-color: black;border: solid 1.5px;border-radius: 5px;">&nbsp;平装￥27.69&nbsp;</div>
+                <div id="priceE" style="height:50px;font-size:18px;margin-left:50px;display:inline;border-color: black;border: solid 1.5px;border-radius: 5px;">&nbsp;电子书￥6.12&nbsp;</div>
+            </div>
+            <div id="introduce" style="width:600px;margin-top: 20px;line-height: 1.5em;">
+                &nbsp;&nbsp;【罗生门】
+            日本文坛的“鬼才”、“短篇小说之神”芥川龙之介擅长描写人物性格与玄妙的心理转折，笔锋犀利简洁，常一针见血藉作品暗讽社会丑恶现象。受家庭教养影响，芥川龙之介广泛且大量涉猎中国古代文学与世界经典，并常以此做为创作灵感，再加以独树一格的冷峻文笔，寄予独特的人生感怀，直打人性底层黑暗。好友菊池宽曾叹：“像他那样高身的教养，优秀的趣味，已及兼备和汉洋学问的作家，今后恐怕绝无仅有。” 本书以“暗黑人性”为基调，精选《竹林中》《杜子春》《河童》等十五篇芥川龙之介经典小说分为四部，带领读者全方位认识芥川龙之介的风格与时期变化。
+            </div>
+            <div style="font-size: 22px;margin-top: 50px;margin-left: 500px;">
+            更多推荐
+                <img src="商品页_10.png" style="position:relative;top:5px;" onclick="blockclose()">
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+</div>
+<script type="text/javascript">
+
+    function To(a){
+        var block=[];
+        var color=[];
+        var font=[];
+        block[1]=document.getElementById("block1");
+        block[2]=document.getElementById("block2");
+        block[3]=document.getElementById("block3");
+        color[1]=document.getElementById("color1");
+        color[2]=document.getElementById("color2");
+        color[3]=document.getElementById("color3");
+        font[1]=document.getElementById("font1");
+        font[2]=document.getElementById("font2");
+        font[3]=document.getElementById("font3");
+        var i;
+        for(i=1;i<=3;i++)
+        {
+            if(i==a){
+                color[i].style.visibility="visible";
+                font[i].style.fontWeight="bold";
+                block[i].style.transform="translate(0)";
+            }
+            else {
+                 color[i].style.visibility="hidden";
+                 font[i].style.fontWeight="normal";
+                 var x=(i-(a-0))*120+"%";
+                 block[i].style.transform="translate("+x+")";
+            }
+        }
+
+        
+
+    }
+
+    function addPage(Json){
+    var json=JSON.parse(Json);
+    var name=document.getElementById("name");
+    name.innerHTML=json.name;
+    var author=document.getElementById("author");
+    author.innerHTML=json.author;
+    var Class=document.getElementById("class");
+    Class.innerHTML="分类："+json.class;
+    var introduce=document.getElementById("introduce");
+    introduce.innerHTML="&nbsp&nbsp"+json.introduce;
+        
+    }
+    function move(){
+        var block=document.getElementById("bookdetail");
+        block.style.transform="translate(0,0)";
+
+    }
+    function blockclose(){
+        var block=document.getElementById("bookdetail");
+        block.style.transform="translate(0,110%)";
+    }
+    function change(a){
+        var div=[];
+        var img=[];
+         img[1]=document.getElementById("img1");
+         img[2]=document.getElementById("img2");
+         img[3]=document.getElementById("img3");
+         img[4]=document.getElementById("img4");
+         img[5]=document.getElementById("img5");
+         img[6]=document.getElementById("img6");
+         img[7]=document.getElementById("img7");
+         img[8]=document.getElementById("img8");
+         img[9]=document.getElementById("img9");
+         img[10]=document.getElementById("img10");
+         img[11]=document.getElementById("img11");
+         img[12]=document.getElementById("img12");
+         img[13]=document.getElementById("img13");
+         img[14]=document.getElementById("img14");
+         div[1]=document.getElementById("div1");
+         div[2]=document.getElementById("div2");
+         div[3]=document.getElementById("div3");
+         div[4]=document.getElementById("div4");
+         div[5]=document.getElementById("div5");
+         div[6]=document.getElementById("div6");
+         div[7]=document.getElementById("div7");
+         div[8]=document.getElementById("div8");
+         div[9]=document.getElementById("div9");
+         div[10]=document.getElementById("div10");
+         div[11]=document.getElementById("div11");
+         div[12]=document.getElementById("div12");
+         div[13]=document.getElementById("div13");
+         div[14]=document.getElementById("div14");
+        var x;
+
+         if((a%2)!==0) {
+       setTimeout( function(){
+           img[1].style.opacity="1";
+         img[3].style.opacity="1";
+         img[5].style.opacity="1";
+         img[7].style.opacity="1";
+         img[9].style.opacity="1";
+         img[11].style.opacity="1";
+         img[13].style.opacity="1";
+           div[2].style.opacity="1";
+           div[4].style.opacity="1";
+           div[6].style.opacity="1";
+           div[8].style.opacity="1";
+           div[10].style.opacity="1";
+           div[12].style.opacity="1";
+           div[14].style.opacity="1";  },1000);
+         img[2].style.opacity="0";
+         img[4].style.opacity="0";
+         img[6].style.opacity="0";
+         img[8].style.opacity="0";
+         img[10].style.opacity="0";
+         img[12].style.opacity="0";
+         img[14].style.opacity="0";
+       div[1].style.opacity="0";
+         div[3].style.opacity="0";
+         div[5].style.opacity="0";
+         div[7].style.opacity="0";
+         div[9].style.opacity="0";
+         div[11].style.opacity="0";
+         div[13].style.opacity="0";
+
+
+
+
+
+
+
+
+    }
+    else {
+
+
+
+
+           img[1].style.opacity="0";
+           img[3].style.opacity="0";
+           img[5].style.opacity="0";
+           img[7].style.opacity="0";
+           img[9].style.opacity="0";
+           img[11].style.opacity="0";
+           img[13].style.opacity="0";
+           div[2].style.opacity="0";
+           div[4].style.opacity="0";
+           div[6].style.opacity="0";
+           div[8].style.opacity="0";
+           div[10].style.opacity="0";
+           div[12].style.opacity="0";
+           div[14].style.opacity="0";
+           setTimeout(function(){
+                img[2].style.opacity="1";
+                img[4].style.opacity="1";
+                img[6].style.opacity="1";
+                img[8].style.opacity="1";
+                img[10].style.opacity="1";
+                img[12].style.opacity="1";
+                img[14].style.opacity="1";
+                div[1].style.opacity="1";
+                div[3].style.opacity="1";
+                div[5].style.opacity="1";
+                div[7].style.opacity="1";
+                div[9].style.opacity="1";
+                div[11].style.opacity="1";
+                div[13].style.opacity="1";
+           },1000);
+
+
+
+         }}
+
+</script>
+</body>
+</html>
